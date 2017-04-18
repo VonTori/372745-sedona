@@ -65,18 +65,22 @@
             </fieldset>
             <fieldset class="price-option">
               <legend>Стоимость в сутки (Р):</legend>
-              <div>
-                от<output name="price">0</output>
-                до<output name="price">3000</output>
-              </div>
-              <input type="range" name="price" min="0" max="5000" step="50">
+                <label for="from">
+                  от
+                </label>
+                <input tabindex="" name="from" id="from" placeholder="0">
+                <label for="to">
+                  до
+                </label>
+                <input tabindex="" name="to" id="to" placeholder="3000">
+                <input type="range" name="price" min="0" max="5000" step="50">
             </fieldset>
             <button class="option-button" type="submit">Показать</button>
           </form>
         </div>
 
         <div class="display-filters">
-          <h3>Найдено: 3</h3>
+          <h3>Найдено: <output name="">3</output></h3>
           <span>Сортировка:</span>
           <div class="display-sorting">
             <a>По цене</a>
@@ -94,7 +98,7 @@
             <img src="http://placehold.it/100x100" width="" height="" alt="Amara Resort & spa">
             <a href="#"><h2>Amara Resort & spa</h2></a>
             <div class="item-info">
-              <p>Гостиница</p>
+              <span>Гостиница</span>
               <span>от 3500 р.</span>
             </div>
             <div class="item-buttons">
@@ -109,14 +113,14 @@
                 <span></span>
                 <span></span>
               </div>
-              <p>Рейтинг: 8,5</p>
+              <span>Рейтинг: 8,5</span>
             </div>
           </article>
           <article class="catalog-item">
             <img src="http://placehold.it/100x100" width="" height="" alt="Desert Quail Inn">
             <a href="#"><h2>Desert Quail Inn</h2></a>
             <div class="item-info">
-              <p>Мотель</p>
+              <span>Мотель</span>
               <span>от 2000 р.</span>
             </div>
             <div class="item-buttons">
@@ -128,14 +132,14 @@
                 <span></span>
                 <span></span>
               </div>
-              <p>Рейтинг: 8,5</p>
+              <span>Рейтинг: 8,5</span>
             </div>
           </article>
           <article class="catalog-item">
             <img src="http://placehold.it/100x100" width="" height="" alt="Villas at Poco Diablo">
             <a href="#"><h2>Villas at Poco Diablo</h2></a>
             <div class="item-info">
-              <p>Апартаменты</p>
+              <span>Апартаменты</span>
               <span>от 4000 з.</span>
             </div>
             <div class="item-buttons">
@@ -147,7 +151,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <p>Рейтинг: 8,5</p>
+              <span>Рейтинг: 8,5</span>
             </div>
           </article>
         </section>
@@ -156,18 +160,18 @@
 
     <footer class="page-footer">
       <div class="container">
-        <section class="footer-hashtag">
+        <div class="footer-hashtag">
           <a href="#">#visitsedona</a>
-        </section>
-        <section class="footer-social">
+        </div>
+        <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-yt" href="#">Ютуб</a>
-        </section>
-        <section class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
           <span>Website by</span>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" width="" height="" alt="Академия HTML"></a>
-        </section>
+        </div>
       </div>
     </footer>
   </body>
