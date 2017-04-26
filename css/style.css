@@ -17,11 +17,41 @@ body {
 
 .page-nav {
   width: 1056px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-nav ul {
   display: flex;
+  margin: 0; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
   list-style: none;
+}
+
+.page-nav li:first-child {
+  width: 128px;
+  margin-right: 112px;
+}
+
+.page-nav li:nth-child(3),
+.page-nav li:last-child {
+  margin-left: auto;
+}
+
+.page-nav li:last-child {
+  width: 80px;
+  margin-left: 160px;
+}
+
+.header-logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .intro {
@@ -123,6 +153,10 @@ body {
   width: 320px;
 }
 
+.option-button {
+  float: right;
+}
+
 .display-filters {
   display: flex;
   align-items: center;
@@ -144,13 +178,12 @@ body {
 
 .catalog {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 0 73px;
 }
 
 .catalog-item {
   display: flex;
-  width: 1056px;
   padding-top: 28px;
   padding-bottom: 30px; 
 }
@@ -160,7 +193,7 @@ body {
 }
 
 .item-info {
-  width: 230px;
+  width: 260px;
 }
 
 .item-info h2 {
