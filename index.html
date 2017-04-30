@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -34,8 +36,10 @@
           <div class="intro-logo">
             <img src="img/intro-text.png" width="458" height="352" alt="Добро пожаловать в Седону!">
           </div>
-          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="intro-text">
+            <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
         </section>
 
         <section class="review-first">
@@ -45,21 +49,23 @@
             <p>Седона - не аттракцион для туристов,
             там течёт своя жизнь</p>
           </div>
-          <img src="img/photo-1.jpg" width="800" height="400" alt="Городок Седона">
+          <div class="review-img">
+            <img src="img/photo-1.jpg" width="800" height="400" alt="Городок Седона">
+          </div>
         </section>
 
         <section class="features">
-          <div class="feature-item">
+          <div class="feature-item housing">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем
                мотеле, всё как в кино!</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item food">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер,
                вы не разочаруетесь!</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item souvenirs">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного
                производства!</p>
@@ -67,7 +73,9 @@
         </section>
 
         <section class="review-second">
-          <img src="img/photo-2.jpg" width="800" height="400" alt="Мост дьявола">
+          <div class="review-img">
+            <img src="img/photo-2.jpg" width="800" height="400" alt="Мост дьявола">
+          </div>
           <div class="review-text">
             <h2>Там есть мост дьявола</h2>
             <span>№2</span>
@@ -99,7 +107,7 @@
 
         <div class="conclusion">
           <h4>Заинтересовались?</h4>
-          <p>Укажите предполагаемые даты поездки,
+          <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="page-button" type="button">Поиск гостиницы в Седоне</button>
         </div>
@@ -110,14 +118,14 @@
               <label for="arrival">
                 Дата заезда:
               </label>
-              <input type="text" name="arrival" id="arrival" placeholder="24 апреля 2016">
+              <input type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
               <button class="calendar-arrival" type="button"></button>
             </div>
             <div class="search-form-group">
               <label for="leaving">
-                Дата выезда
+                Дата выезда:
               </label>
-              <input type="text" name="leaving" id="leaving" placeholder="4 июля 2016">
+              <input type="text" name="leaving" id="leaving" placeholder="4 июля 2017">
               <button class="calendar-leaving" type="button"></button>
             </div>
             <div class="search-form-group">
@@ -125,25 +133,27 @@
                 <label for="adults">
                   Взрослые:
                 </label>
+                <button class="reduce" type="button"></button>
                 <button class="add" type="button"></button>
                 <input type="text" name="adults" id="adults" placeholder="2">
-                <button class="reduce" type="button"></button>
               </div>
               <div>
                 <label for="childs">
                   Дети:
                 </label>
+                <button class="reduce" type="button"></button>
                 <button class="add" type="button"></button>
                 <input type="text" name="childs" id="childs" placeholder="0">
-                <button class="reduce" type="button"></button>
               </div>
             </div>
             <button class="search-form-btn" type="submit">Найти</button>
           </form>
         </div>
-      </div>
 
       <div class="page-map">
+        <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+      </div>
+
       </div>
     </main>
 
@@ -159,7 +169,7 @@
         </div>
         <div class="footer-copyright">
           <span>Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.png" width="113" height="39" alt="Академия HTML"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
         </div>
       </div>
     </footer>
