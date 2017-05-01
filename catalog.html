@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Отели Седоны</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -22,7 +24,7 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a>Гостиницы</a>
+              <a class="active">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -71,7 +73,7 @@
                 <input type="checkbox" name="apartaments" id="apartaments" checked>
                 <label for="apartaments">
                   Апартаменты
-                </labe>
+                </label>
               </p>
             </fieldset>
             <fieldset class="price-option">
@@ -79,11 +81,11 @@
                 <label for="from">
                   от
                 </label>
-                <input tabindex="" name="from" id="from" placeholder="0">
+                <input tabindex="1" name="from" id="from" placeholder="0">
                 <label for="to">
                   до
                 </label>
-                <input tabindex="" name="to" id="to" placeholder="3000">
+                <input tabindex="2" name="to" id="to" placeholder="3000">
                 <input type="range" name="price" min="0" max="5000" step="50">
             </fieldset>
             <button class="option-button" type="submit">Показать</button>
@@ -91,7 +93,7 @@
         </div>
 
         <div class="display-filters">
-          <h3>Найдено: <output name="">3</output></h3>
+          <h3>Найдено: <output name="found-number">3</output></h3>
           <div class="display-sorting">
             <span>Сортировка:</span>
             <a>По цене</a>
@@ -100,7 +102,7 @@
           </div>
           <div class="display-arrows">
             <a class="arrow-up" href="#"></a>
-            <a class="arrow-down"></a>
+            <a class="arrow-down active"></a>
           </div>
         </div>
 
@@ -110,7 +112,7 @@
             <div class="item-info">
               <a href="#"><h2>Amara Resort & spa</h2></a>
               <span>Гостиница</span>
-              <span>от 3500 р.</span>
+              <span>от 4000 р.</span>
               <div class="item-buttons">
                 <a class="about-btn" href="#">Подробнее</a>
                 <a class="receive-btn" href="#">Забронировать</a>
@@ -122,9 +124,8 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span></span>
               </div>
-              <span>Рейтинг: 8,5</span>
+              <span class="raiting-number">Рейтинг: 8,5</span>
             </div>
           </article>
           <article class="catalog-item">
@@ -132,6 +133,26 @@
             <div class="item-info">
               <a href="#"><h2>Desert Quail Inn</h2></a>
               <span>Мотель</span>
+              <span>от 3000 р.</span>
+              <div class="item-buttons">
+                <a class="about-btn" href="#">Подробнее</a>
+                <a class="receive-btn" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="raiting">
+              <div class="raiting-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="raiting-number">Рейтинг: 8,9</span>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="img/item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            <div class="item-info">
+              <a href="#"><h2>Villas at Poco Diablo</h2></a>
+              <span>Апартаменты</span>
               <span>от 2000 р.</span>
               <div class="item-buttons">
                 <a class="about-btn" href="#">Подробнее</a>
@@ -143,26 +164,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <span>Рейтинг: 8,5</span>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/item-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-            <div class="item-info">
-              <a href="#"><h2>Villas at Poco Diablo</h2></a>
-              <span>Апартаменты</span>
-              <span>от 4000 з.</span>
-              <div class="item-buttons">
-                <a class="about-btn" href="#">Подробнее</a>
-                <a class="receive-btn" href="#">Забронировать</a>
-              </div>
-            </div>
-            <div class="raiting">
-              <div class="raiting-stars">
-                <span></span>
-                <span></span>
-              </div>
-              <span>Рейтинг: 8,5</span>
+              <span class="raiting-number">Рейтинг: 9,2</span>
             </div>
           </article>
         </section>
@@ -175,13 +177,13 @@
           <a href="#">#visitsedona</a>
         </div>
         <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-yt" href="#">Ютуб</a>
+          <a class="social-btn social-btn-tw" href="#" title="Twitter"><span class="visually-hidden">Твиттер</span></a>
+          <a class="social-btn social-btn-fb" href="#" title="Facebook"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social-btn social-btn-yt" href="#" title="Youtube"><span class="visually-hidden">Ютуб</span></a>
         </div>
         <div class="footer-copyright">
           <span>Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.png" width="113" height="39" alt="Академия HTML"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" title="Интенсивный онлайн‑курс «Базовый HTML и CSS»"></a>
         </div>
       </div>
     </footer>
