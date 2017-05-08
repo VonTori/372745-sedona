@@ -78,15 +78,23 @@
             </fieldset>
             <fieldset class="price-option">
               <legend>Стоимость в сутки (Р):</legend>
-                <label for="from">
+              <div class="price-controls">
+                <label class="min-price" for="from">
                   от
                 </label>
-                <input tabindex="1" name="from" id="from" placeholder="0">
-                <label for="to">
+                <input type="text" tabindex="1" name="from" id="from" placeholder="0">
+                <label class="max-price" for="to">
                   до
                 </label>
-                <input tabindex="2" name="to" id="to" placeholder="3000">
-                <input type="range" name="price" min="0" max="5000" step="50">
+                <input type="text" tabindex="2" name="to" id="to" placeholder="3000">
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
             </fieldset>
             <button class="option-button" type="submit">Показать</button>
           </form>
@@ -96,13 +104,13 @@
           <h3>Найдено: <output name="found-number">3</output></h3>
           <div class="display-sorting">
             <span>Сортировка:</span>
-            <a>По цене</a>
+            <a class="active">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По рейтингу</a>
           </div>
           <div class="display-arrows">
-            <a class="arrow-up" href="#"></a>
-            <a class="arrow-down active"></a>
+            <a class="arrow-up" href="#" title="По возрастанию"></a>
+            <a class="arrow-down active" title="По убыванию"></a>
           </div>
         </div>
 
