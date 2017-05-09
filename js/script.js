@@ -1,3 +1,6 @@
+var html = document.documentElement;
+html.className = html.className.replace("no-js","js");
+
 var button = document.querySelector(".page-button");
 var popup = document.querySelector(".search-form");
 var form = popup.querySelector("form");
