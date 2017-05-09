@@ -9,13 +9,13 @@ var leaving = popup.querySelector("[name=leaving]");
 var adults = popup.querySelector("[name=adults]");
 var childs = popup.querySelector("[name=childs]");
 
+popup.classList.add("search-form-closed");
+
 button.addEventListener("click", function (event) {
   event.preventDefault();
-  if (popup.classList.toggle("search-form-close")) {
-    popup.classList.add("search-form-animation");
-  }
+  popup.classList.toggle("search-form-closed");
+  popup.classList.add("search-form-animation");
   arrival.focus();
-  popup.classList.remove("search-form-error");
 });
 
 form.addEventListener("submit", function (event) {
@@ -30,7 +30,6 @@ form.addEventListener("submit", function (event) {
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     if (popup.classList.contains("search-form")) {
-      popup.classList.toggle("search-form-close");
       popup.classList.remove("search-form-error");
     }
   }
