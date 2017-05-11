@@ -110,7 +110,7 @@ body {
 }
 
 .intro-text {
-  width: 1056px;
+  width: 1054px;
   padding: 0 73px;
   padding-top: 60px;
   padding-bottom: 52px;
@@ -614,9 +614,9 @@ body {
 }
 
 .search-form-btn {
-  width: 100%;
+  min-width: 458px;
   margin-top: 52px;
-  padding: 17px 197px;
+  padding: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -1194,7 +1194,7 @@ input[type="checkbox"]:checked:disabled  + label::after {
 .footer-hashtag {
   width: 136px;
   margin-left: 60px;
-  margin-right: 254px;
+  margin-right: 229px;
   text-align: center;
 }
 
@@ -1213,7 +1213,9 @@ input[type="checkbox"]:checked:disabled  + label::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 160px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 210px;
   text-align: center;
 }
 

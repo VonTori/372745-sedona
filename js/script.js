@@ -15,6 +15,7 @@ button.addEventListener("click", function (event) {
   event.preventDefault();
   popup.classList.toggle("search-form-closed");
   popup.classList.add("search-form-animation");
+  popup.classList.remove("search-form-error")
   arrival.focus();
 });
 
